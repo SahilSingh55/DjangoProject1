@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+
+{% block title %}Addmission Form 1{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0 mb-3">
+  <img src="/static/img/7.jfif" class="d-block w-100 mx-0" alt="...">
+</div>
+<div class="container  mb-3 py-4">
+  <h1 style="position: absolute;
+           top: 100px;
+           left: 666px;">Addmission Form 1</h1>
+  <form method="post" enctype="multipart/form-data" action="/contact">
+    {% csrf_token %}
+    <div class="form-group">
+      <lable for="name" style="font-size: 20px;">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="As per 10th marksheet">
+    </div>
+
+    <!--<div class="form-group">
+      <lable for="father" style="font-size: 20px;">Father name</label>
+        <input type="text" class="form-control" id="father" name="father" placeholder="Harry Potter">
+    </div>
+
+    <div class="form-group">
+      <lable for="name2" style="font-size: 20px;">Mother name</label>
+        <input type="text" class="form-control" id="name2" name="name2" placeholder="Merry Potter">
+    </div>-->
+
+    <div class="form-group">
+      <label for="email" style="font-size: 20px;">Email address</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+    </div>
+
+    <div class="form-group">
+      <lable for="phone" style="font-size: 20px;">Contact Number</label>
+        <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter the Mobile Number">
+    </div>
+
+    <!--<div class="form-group">
+      <lable for="phone1" style="font-size: 20px;">Contact Number(Alternate)</label>
+        <input type="phone" class="form-control" id="phone1" name="phone1" placeholder="Enter the Alternate Mobile Number">
+    </div>-->
+
+    <!--<div class="form-group">
+      <lable for="MhtcetAppNo" style="font-size: 20px;">MHTCET Application Number</label>
+        <input type="number" class="form-control" id="MhtcetAppNo" name="MhtcetAppNo" placeholder="Enter the Application Number">
+    </div>
+
+    <div class="form-group">
+      <lable for="MhtcetPercentile" style="font-size: 20px;">MHTCET Percentile</label>
+        <input type="number" class="form-control" id="MhtcetPercentile" name="MhtcetPercentile" placeholder="Enter the Percentile">
+    </div>
+
+    <div class="form-group">
+      <lable for="MhtcetRank" style="font-size: 20px;">MHTCET Rank</label>
+        <input type="number" class="form-control" id="MhtcetRank" name="MhtcetRank" placeholder="Enter the Rank">
+    </div>
+
+    <div class="form-group">
+      <lable for="JeeAppNo" style="font-size: 20px;">JEE Application Number</label>
+        <input type="number" class="form-control" id="JeeAppNo" name="JeeAppNo" placeholder="Enter the Application Number">
+    </div>
+
+    <div class="form-group">
+      <lable for="JeePercentile" style="font-size: 20px;">JEE Percentile</label>
+        <input type="number" class="form-control" id="JeePercentile" name="JeePercentile" placeholder="Enter the Percentile">
+    </div>
+
+    <div class="form-group">
+      <lable for="JeeRank" style="font-size: 20px;">JEE Rank</label>
+        <input type="number" class="form-control" id="JeeRank" name="JeeRank" placeholder="Enter the Rank">
+    </div>
+
+    <div class="form-group">
+      <label for="Address1" style="font-size: 20px;">Address(Permanent)</label>
+      <textarea class="form-control" id="Address1" rows="3" name="Address1"
+        placeholder="Enter the Permanent Address"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="Address2" style="font-size: 20px;">Address(Correspondance)</label>
+      <textarea class="form-control" id="Address2" rows="3" name="Address2"
+        placeholder="Enter the Correspondance Address"></textarea>
+    </div>
+
+    <div class="form-group">
+      <lable for="CollegeName" style="font-size: 20px;">12th College Name</label>
+        <input type="text" class="form-control" id="CollegeName" name="CollegeName" placeholder="Enter the 12th College Name">
+    </div>
+
+    <div class="form-group">
+      <lable for="Percentage" style="font-size: 20px;">12th Percentage</label>
+        <input type="number" class="form-control" id="Percentage" name="Percentage" placeholder="Enter the 12th Percentage">
+    </div>
+    
+    <div class="form-group">
+      <lable for="Aadhar" style="font-size: 20px;">Aadhar Number</label>
+        <input type="number" class="form-control" id="Aadhar" name="Aadhar" placeholder="Enter the Aadhar Number">
+    </div>-->
+
+   
+    <div class="form-group">
+      <label for="desc" style="font-size: 20px;">Description</label>
+      <textarea class="form-control" id="desc" rows="3" name="desc"
+        placeholder="Tell me about what your Dream College"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+ 
+
+</div>
+{% endblock body %}
